@@ -45,6 +45,17 @@ export class CoursesComponent{
     }
   ]
 
+  getTotalCourses(){
+    return this.courses.length;
+  }
+
+  getFreeCourses() {
+    return this.courses.filter(course => course.type === "Free").length;
+  }
+
+  getPremiumCourses() {
+    return this.courses.filter(course => course.type === "Premium").length;
+  }
 
 
 }

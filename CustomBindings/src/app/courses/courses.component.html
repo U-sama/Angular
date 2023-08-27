@@ -1,4 +1,10 @@
-
+<div>
+  <app-search></app-search>
+  <app-filter
+  [total]="getTotalCourses()"
+  [free]="getFreeCourses()"
+  [premium]="getPremiumCourses()"></app-filter>
+</div>
 <div class="course-container" *ngFor="let course of courses">
       <div class="course-card">
           <div>
