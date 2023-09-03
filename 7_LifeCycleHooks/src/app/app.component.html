@@ -1,0 +1,11 @@
+<div class="container">
+  <input type="text" #inputelement>
+  <button (click)="Onclick(inputelement)">Submit</button>
+  <app-demo [value]="inputvalue" *ngIf="destroy">
+    <h4>This is projected Content {{inputvalue}}</h4>
+  </app-demo>
+  <br><br>
+  <button (click)="ondestroy()">Destroy</button>
+  <!-- <app-demo [value]="inputvalue"></app-demo>
+  <app-demo [value]="inputvalue"></app-demo> -->
+</div>
